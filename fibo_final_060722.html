@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+  <!-- dãy fibonacci: số liền sau bằng tổng hai số liền trước -->
+  <!-- vd: 1,1,2,3... -->
+  <script>
+
+    let num = prompt("Enter the number: ");
+    let num1 = 0;
+    let num2 = 1;
+    let fibo = '';
+
+    let i = num;
+    while (i > 0) {
+      
+      fibo = num1 + num2; //quy tắc:  mỗi phần tử luôn bằng tổng hai phần tử trước nó
+      num1 = num2; // gán vị trí số 1 với số 2 khi dãy tịnh tiếnimage.png
+      num2 = fibo; // hoán đổi vị trí số thứ 2 với số fibo
+      document.write(num1 + ", ")
+
+      i--;
+
+    }
+
+  </script>
+  
+</body>
+
+
+
+</html>
